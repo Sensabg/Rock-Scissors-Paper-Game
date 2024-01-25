@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class checking {
+public class RockPaperScissors {
     private static final String ROCK = "Rock";
     private static final String PAPER = "Paper";
     private static final String SCISSORS = "Scissors";
