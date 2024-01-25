@@ -7,6 +7,7 @@ public class RockPaperScissors {
     private static final String SCISSORS = "Scissors";
 
     public static void main(String[] args) {
+
         System.out.println("Type 'end' or 'exit' to quit");
 
         int humanWins = 0;
@@ -14,12 +15,15 @@ public class RockPaperScissors {
         int draws = 0;
 
         while (true) {
+            printLines();
             System.out.println("Pick up your weapon and fight!(Rock, Paper, Scissors)");
+            printLines();
             System.out.print("Enter your choice: ");
 
             String humanChoice = getHumanChoice();
 
             if (humanChoice.equalsIgnoreCase("Game over")) {
+                printLines();
                 if (humanWins > botWins) {
                     System.out.println("Great job!");
                     System.out.println("You won the game!");
@@ -30,16 +34,17 @@ public class RockPaperScissors {
                     System.out.printf("Human wins %d : %d Bot wins", humanWins ,botWins);
                 } else {
                     System.out.println("The game ended in a draw!");
+                    System.out.printf("Human wins %d : %d Bot wins\n", humanWins ,botWins);
                     System.out.println("Rematch?");
-                    System.out.printf("Human wins %d : %d Bot wins", humanWins ,botWins);
                 }
                 break;
             }
 
             String botChoice = getBotChoice();
+            printLines();
             String result = checkWinner(humanChoice, botChoice);
             System.out.println(result);
-
+            printLines();
             if (result.equals("You won the round!")) {
                 humanWins++;
             } else if (result.equals("You lost the round!")) {
@@ -113,5 +118,8 @@ public class RockPaperScissors {
             return (player.equalsIgnoreCase(ROCK)) ? "You won the round!" : "You lost the round!";
         }
         return ""; // Satisfy the compiler :)
+    }
+    public static void printLines (){
+        System.out.println("-----------------------------------------------------------------");
     }
 }
