@@ -44,6 +44,9 @@ public class RockPaperScissors {
                     System.out.println("You lost the game!");
                     System.out.printf("Human wins %d : %d Bot wins", humanWins ,botWins);
                 } else {
+                    if(draws == 0){
+                        return;
+                    }
                     System.out.print(ANSI_YELLOW);
                     System.out.println("The game ended in a draw!");
                     System.out.printf("Human wins %d : %d Bot wins\n", humanWins ,botWins);
