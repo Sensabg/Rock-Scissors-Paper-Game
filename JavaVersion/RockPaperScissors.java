@@ -5,34 +5,46 @@ public class RockPaperScissors {
     private static final String ROCK = "Rock";
     private static final String PAPER = "Paper";
     private static final String SCISSORS = "Scissors";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
 
     public static void main(String[] args) {
-
+        System.out.println();
+        System.out.print(ANSI_RED);
         System.out.println("Type 'end' or 'exit' to quit");
+        System.out.print(ANSI_RESET);
 
         int humanWins = 0;
         int botWins = 0;
         int draws = 0;
 
         while (true) {
+            System.out.print(ANSI_RESET);
             printLines();
+            System.out.print(ANSI_BLUE);
             System.out.println("Pick up your weapon and fight!(Rock, Paper, Scissors)");
+            System.out.print(ANSI_RESET);
             printLines();
             System.out.print("Enter your choice: ");
-
             String humanChoice = getHumanChoice();
 
             if (humanChoice.equalsIgnoreCase("Game over")) {
                 printLines();
                 if (humanWins > botWins) {
+                    System.out.print(ANSI_GREEN);
                     System.out.println("Great job!");
                     System.out.println("You won the game!");
                     System.out.printf("Human wins %d : %d Bot wins", humanWins ,botWins);
                 } else if (botWins > humanWins) {
+                    System.out.print(ANSI_RED);
                     System.out.println("Game over!");
                     System.out.println("You lost the game!");
                     System.out.printf("Human wins %d : %d Bot wins", humanWins ,botWins);
                 } else {
+                    System.out.print(ANSI_YELLOW);
                     System.out.println("The game ended in a draw!");
                     System.out.printf("Human wins %d : %d Bot wins\n", humanWins ,botWins);
                     System.out.println("Rematch?");
@@ -41,10 +53,14 @@ public class RockPaperScissors {
             }
 
             String botChoice = getBotChoice();
+
             printLines();
             String result = checkWinner(humanChoice, botChoice);
+            System.out.print(ANSI_RED);
             System.out.println(result);
+            System.out.print(ANSI_RESET);
             printLines();
+
             if (result.equals("You won the round!")) {
                 humanWins++;
             } else if (result.equals("You lost the round!")) {
@@ -100,7 +116,7 @@ public class RockPaperScissors {
             } else if (human.equalsIgnoreCase("end") || human.equalsIgnoreCase("exit")) {
                 return "Game over";
             } else {
-                System.out.println("Invalid input. Try again...");
+                System.out.println("Invalid input. Try again..." + ANSI_RED);
             }
         } while (!human.equalsIgnoreCase("rock") && !human.equalsIgnoreCase("paper") && !human.equalsIgnoreCase("scissors"));
 
