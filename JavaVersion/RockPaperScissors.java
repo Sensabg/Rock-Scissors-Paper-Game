@@ -119,7 +119,10 @@ public class RockPaperScissors {
             } else if (human.equalsIgnoreCase("end") || human.equalsIgnoreCase("exit")) {
                 return "Game over";
             } else {
-                System.out.println("Invalid input. Try again..." + ANSI_RED);
+                System.out.print(ANSI_RED);
+                System.out.println("Invalid input. Try again...");
+                System.out.print(ANSI_RESET);
+                System.out.print("Enter your choice: ");
             }
         } while (!human.equalsIgnoreCase("rock") && !human.equalsIgnoreCase("paper") && !human.equalsIgnoreCase("scissors"));
 
