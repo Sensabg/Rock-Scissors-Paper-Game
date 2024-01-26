@@ -50,7 +50,7 @@ public class RockPaperScissors {
                     System.out.print(ANSI_YELLOW);
                     System.out.println("The game ended in a draw!");
                     System.out.printf("Human wins %d : %d Bot wins\n", humanWins ,botWins);
-                    System.out.println("Rematch?");
+                    System.out.print("Rematch?");
                 }
                 break;
             }
