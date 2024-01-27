@@ -1,6 +1,6 @@
 # Rock Scissors Paper Game
 <img
-  src="/RockPaperScissors.jpeg"
+  src="/documentation/Rock Paper Scissors.jpeg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -14,7 +14,7 @@
 ## Start 
 
 <img
-  src="/Start .png"
+  src="/documentation/Start .png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -22,7 +22,7 @@
 ## Added different colors and lines for readability
 
 <img
-  src="/Printing in different colors .png"
+  src="/documentation/Printing in different colors .png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -30,7 +30,7 @@
 ## Invalid choice 
 
 <img
-  src="/invalid.png"
+  src="/documentation/invalid.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -38,7 +38,7 @@
 ## Win 
 
 <img
-  src="/win.png"
+  src="/documentation/win.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -46,7 +46,7 @@
 ## Draw 
 
 <img
-  src="/Draww.png"
+  src="/documentation/Draww.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -54,7 +54,7 @@
 ## Lose 
 
 <img
-  src="/lose.png"
+  src="/documentation/lose.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
@@ -62,7 +62,7 @@
 ## End
 
 <img
-  src="/enD.png"
+  src="/documentation/enD.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
