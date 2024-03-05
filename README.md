@@ -1,11 +1,10 @@
 # Rock Scissors Paper Game
+
 <img
   src="/documentation/Rock Paper Scissors.jpeg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: auto; width: 390px; height: auto;">
- <br>
-  <img src="https://komarev.com/ghpvc/?username=Sensabg&label=Views&color=2dba4e&style=flat" alt="Sensabg" width="90px" height="auto">
 
 ### Available options - not case sensitive
 
